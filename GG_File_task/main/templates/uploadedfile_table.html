@@ -1,0 +1,9 @@
+<table>
+    {% for index, row in df.iterrows %}
+        <tr>
+            {% for value in row %}
+                <td>{{ value }}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
